@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS task_list(
+	id SERIAL PRIMARY KEY,
+	user_id VARCHAR(50) NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	description VARCHAR(500) NOT NULL,
+	alarmtime TIMESTAMP NOT NULL,
+	iscompleted BOOL NOT NULL
+)
